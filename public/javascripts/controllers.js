@@ -14,6 +14,7 @@ app.controller('homeCtrl', function($scope){
 		$scope.word.english = '';
 		$scope.word.german = '';
 		$scope.word.spanish = '';
+    $scope.word.img = '';
 
 	}
 
@@ -27,11 +28,29 @@ app.controller('homeCtrl', function($scope){
   }, function(newVal, oldVal) {
     $scope.words = newVal;
     console.log('words', $scope.words);
-    $scope.word = $scope.words[0];
+    $scope.word = $scope.words[3];
   })
 
+  var index = 0;
+
   $scope.next = function() {
-    $scope.word = $scope.words[]
+    index++;
+    if(index == $scope.words.length){
+      index = 0;
+      $scope.word = $scope.words[index]
+    } else {
+      $scope.word = $scope.words[index];
+    }
+  }
+
+  $scope.previous = function() {
+    if(index === 0){
+      $scope.word = $scope.words[index]
+      return;
+    } else {
+      index--;
+    $scope.word = $scope.words[index];
+    }
   }
 
 })

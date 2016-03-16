@@ -3,7 +3,7 @@
 
   <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="http://www.academiadeciencia.org.br/site/wp-content/uploads/2012/07/fogo.jpg" max-width="40%" max-height="30%">
+      <img class="activator" ng-src="{{word.img}}" max-width="40%" max-height="30%" min-width="40%" min-height="30%">
     </div>
     <div class="card-content activator">
       <span class="card-title activator grey-text text-darken-4">Click Here to Reveal Words!</span>
@@ -18,8 +18,19 @@
       <div class="divider"></div>
       <div class="divider"></div>
       <h4>Spanish: {{word.spanish}}</h4>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button class="waves-effect waves-light btn left card-title activator" ng-click="previous()">PREVIOUS</button>
+      <button class="waves-effect waves-light btn right card-title activator" ng-click="next()">NEXT</button>
     </div>
   </div>
-  <button class="waves-effect waves-light btn left" ng-click="previous()">PREVIOUS</button>
-  <button class="waves-effect waves-light btn right" ng-click="next()">NEXT</button>
 </div>

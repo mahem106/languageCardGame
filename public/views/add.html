@@ -20,6 +20,11 @@
 					<input id="spanish" type="text" class="validate" name="spanish" ng-model="word.spanish" required>
 					<label for="spanish">Español</label>
 				</div>
+
+        <div class="input-field col s8">
+					<input id="img" type="text" class="validate" name="img" ng-model="word.img" required>
+					<label for="img">Image URL</label>
+				</div>
 			</div>
 
 			<button class="waves-effect waves-light btn" ng-disabled="wordForm.$invalid" ng-click="addWord()">Add Word</button>
