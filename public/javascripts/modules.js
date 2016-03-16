@@ -21,5 +21,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			url: '/play',
 			templateUrl: "views/play.html",
 			controller: 'playCtrl'
+		}).state('practice', {
+			url: '/practice',
+			templateUrl: "views/practice.html",
+			controller: 'practiceCtrl'
 		})
 	})

@@ -53,4 +53,38 @@ app.controller('homeCtrl', function($scope){
     }
   }
 
+}).controller('practiceCtrl', function($scope, WordService){
+
+  WordService.getWords();
+
+  $scope.$watch(function() {
+    return WordService.words;
+  }, function(newVal, oldVal) {
+    $scope.words = newVal;
+    console.log('words', $scope.words);
+    $scope.word = $scope.words[index];
+  })
+
+  var index = 0;
+
+  $scope.next = function() {
+    index++;
+    if(index == $scope.words.length){
+      index = 0;
+      $scope.word = $scope.words[index]
+    } else {
+      $scope.word = $scope.words[index];
+    }
+  }
+
+  $scope.previous = function() {
+    if(index === 0){
+      $scope.word = $scope.words[index]
+      return;
+    } else {
+      index--;
+    $scope.word = $scope.words[index];
+    }
+  }
+
 })
