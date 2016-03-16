@@ -1,0 +1,29 @@
+<div class="container">
+	<h2>Add a Word</h2>
+
+
+	<div class="row">
+		<form name="wordForm" class="col s12">
+			<div class="row">
+				<div class="input-field col s8">
+					<input  id="english" type="text" class="validate" name="english" ng-model="word.english" required>
+					<label for="english">English</label>
+				</div>
+
+				<div class="input-field col s8">
+					<input id="german" type="text" class="validate" name="german" ng-model="word.german" required>
+					<label for="german">Deutsch</label>
+				</div>
+
+
+				<div class="input-field col s8">
+					<input id="spanish" type="text" class="validate" name="spanish" ng-model="word.spanish" required>
+					<label for="spanish">Español</label>
+				</div>
+			</div>
+
+			<button class="waves-effect waves-light btn" ng-disabled="wordForm.$invalid" ng-click="addWord()">Add Word</button>
+		</form>
+	</div>
+
+</div>

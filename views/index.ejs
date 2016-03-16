@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Languages :)</title>
+	
+	<!-- Angular -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+	<!-- Ui Router -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+
+	<!-- JQUERY -->
+	<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	
+	<!-- Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+	<script src="/javascripts/modules.js"></script>
+	<script src="/javascripts/services.js"></script>
+	<script src="/javascripts/controllers.js"></script>
+
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body ng-app="lApp">
+	
+
+
+	
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#!" class="brand-logo">Language </a>
+				<ul class="right hide-on-med-and-down">
+					<li><a ui-sref='home'>Home</a></li>
+					<li><a ui-sref='add'>Add Word</a></li>
+					<li><a ui-sref='play'>Play</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
+<ui-view></ui-view>
+
+</body>
+</html>
