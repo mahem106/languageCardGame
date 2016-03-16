@@ -28,7 +28,7 @@ app.controller('homeCtrl', function($scope){
   }, function(newVal, oldVal) {
     $scope.words = newVal;
     console.log('words', $scope.words);
-    $scope.word = $scope.words[3];
+    $scope.word = $scope.words[index];
   })
 
   var index = 0;
