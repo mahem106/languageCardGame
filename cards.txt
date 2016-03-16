@@ -1,0 +1,3 @@
+'Fire' 'Das Feuer' 'Fuego' 'http://www.firewireasms.com/wp-content/uploads/2015/02/fire-1.jpg'
+'Water', 'Das Wasser', 'Agua', 'http://www.ccwater.org.uk/wp-content/uploads/2014/09/blue_wave_of_water.jpg'
+'Rice', 'Der Reis', 'Arroz', 'http://blogs.discovermagazine.com/crux/files/2013/08/bowl-of-rice1.jpg'

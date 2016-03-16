@@ -10,8 +10,6 @@ app.service('WordService', function($http){
     $http.get('/cards')
     .then(res => {
       this.words = res.data;
-      console.log(res.data);
-      console.log(this.words);
     }, err => {
       console.error('GetWord error: ', err);
     })

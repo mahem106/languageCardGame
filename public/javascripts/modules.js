@@ -17,11 +17,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
 			templateUrl: "views/add.html",
 			controller: 'addCtrl'
 		})
-		.state('play', {
-			url: '/play',
-			templateUrl: "views/play.html",
+		.state('playGerman', {
+			url: '/playGerman',
+			templateUrl: "views/playGerman.html",
 			controller: 'playCtrl'
-		}).state('practice', {
+		})
+		.state('playSpanish', {
+			url: '/playSpanish',
+			templateUrl: "views/playSpanish.html",
+			controller: 'playCtrl'
+		})
+    .state('practice', {
 			url: '/practice',
 			templateUrl: "views/practice.html",
 			controller: 'practiceCtrl'

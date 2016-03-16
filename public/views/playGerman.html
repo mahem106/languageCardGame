@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="center">Test Your German</h1>
+
+  <div class="card">
+    <div class="card-image">
+      <img ng-src="{{word.img}}">
+    </div>
+      <span class="card-title">Enter Word Below:</span>
+    <div class="card-content">
+      <span class="card-title grey-text text-darken-4">{{word.english}}</span>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <br>
+      <form name="playForm">
+        <div class="input-field col s8">
+          <input type="text" class="validate" name="germanTest" ng-model="word.germanTest" ng-change="checkWordGerman()" required />
+          <label for="german">Deutsch</label>
+        </div>
+      </form>
+      <br>
+
+      <br>
+      <div class="card-action">
+        <button class="waves-effect waves-light btn left" ng-click="previous()">PREVIOUS</button>
+        <button class="waves-effect waves-light btn right" ng-disabled="playForm.germanTest.$error.noMatch" ng-click="next()">NEXT</button>
+      </div>
+    </div>
+  </div>
+</div>
