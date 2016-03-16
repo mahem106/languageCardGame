@@ -1,3 +1,25 @@
-<h1>Let's play</h1>
+<div class="container">
+  <h1>Let's play</h1>
 
-
+  <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://www.academiadeciencia.org.br/site/wp-content/uploads/2012/07/fogo.jpg" max-width="40%" max-height="30%">
+    </div>
+    <div class="card-content activator">
+      <span class="card-title activator grey-text text-darken-4">Click Here to Reveal Words!</span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">English: {{word.english}}<i class="material-icons right">close</i></span>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <br>
+      <h4>German: {{word.german}}</h4>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <div class="divider"></div>
+      <h4>Spanish: {{word.spanish}}</h4>
+    </div>
+  </div>
+  <button class="waves-effect waves-light btn left" ng-click="previous()">PREVIOUS</button>
+  <button class="waves-effect waves-light btn right" ng-click="next()">NEXT</button>
+</div>

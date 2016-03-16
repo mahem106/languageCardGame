@@ -14,14 +14,24 @@ app.controller('homeCtrl', function($scope){
 		$scope.word.english = '';
 		$scope.word.german = '';
 		$scope.word.spanish = '';
-		
+
 	}
 
 })
-.controller('playCtrl', function($scope){
+.controller('playCtrl', function($scope, WordService){
 
-	// console.log('play');
+  WordService.getWords();
 
+  $scope.$watch(function() {
+    return WordService.words;
+  }, function(newVal, oldVal) {
+    $scope.words = newVal;
+    console.log('words', $scope.words);
+    $scope.word = $scope.words[0];
+  })
+
+  $scope.next = function() {
+    $scope.word = $scope.words[]
+  }
 
 })
-

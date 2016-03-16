@@ -6,7 +6,16 @@ app.service('WordService', function($http){
 	this.words = [];
 
 
-	// this.getWords
+	this.getWords = () => {
+    $http.get('/cards')
+    .then(res => {
+      this.words = res.data;
+      console.log(res.data);
+      console.log(this.words);
+    }, err => {
+      console.error('GetWord error: ', err);
+    })
+  }
 
 
 
@@ -20,5 +29,3 @@ app.service('WordService', function($http){
 		});
 	}
 })
-
-
